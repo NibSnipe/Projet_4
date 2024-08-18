@@ -2,6 +2,23 @@
 <html lang="fr">
 
 <head>
+	    <!-- OG pour Facebook -->
+		<meta property="og:title" content="Nina Carducci Photographe" />
+		<meta
+		  property="og:description"
+		  content="Découvrez notre galerie de photos professionnelles, incluant des concerts, portraits, et événements d'entreprise."
+		/>
+		<meta property="og:image" content="./assets/images/nina.webp" />
+		<meta property="og:url" content="https://nina-carducci.github.io/" />
+		<!-- Twitter Cards -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@nina_carducci" />
+		<meta name="twitter:title" content="Nina Carducci Photographe" />
+		<meta
+		  name="twitter:description"
+		  content="Découvrez notre galerie de photos professionnelles, incluant des concerts, portraits, et événements d'entreprise."
+		/>
+		<meta name="twitter:image" content="./assets/images/nina.webp" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
@@ -14,10 +31,10 @@
       name="description"
       content="Découvrez notre galerie de photos professionnelles, incluant des concerts, portraits, et événements d'entreprise."
     />
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
+	<script src="./assets/maugallery.js" defer></script>
+	<script src="./assets/scripts.js" defer></script>
 </head>
 <body>
 <div class="top-header">
@@ -78,7 +95,7 @@
 		<div class="gallery" style="display: none">
 			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="Photographie de Edward Cisneros"/>
 			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="Photographie de Ali Morshedlou"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="Photographie de Jason Goodman"			/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="Photographie de Jason Goodman"/>
 			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="Photographie de Hannah Busing"/>
 			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="Photographie de Ade Tunji" />
 			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="Photographie de Jakob Owens"/>   
@@ -155,8 +172,32 @@
 				<input type="submit" value="Envoyer"/>
 			</form>
 		</div>
+		          <!-- Micro-données pour améliorer le référencement local -->
+				  <div class="contact-info" itemscope itemtype="http://schema.org/LocalBusiness">
+					<meta itemprop="name" content="Nina Carducci" />
+					<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					  <meta itemprop="streetAddress" content="68 avenue Alsace-Lorraine" />
+					  <meta itemprop="addressLocality" content="Bordeaux" />
+					  <meta itemprop="postalCode" content="33200" />
+					  <meta itemprop="addressCountry" content="FR" />
+					</div>
+					<meta itemprop="telephone" content="05 56 67 78 89" />
+					<div
+					  itemprop="openingHoursSpecification"
+					  itemscope
+					  itemtype="http://schema.org/OpeningHoursSpecification"
+					>
+					  <meta itemprop="dayOfWeek" content="Monday" />
+					  <meta itemprop="dayOfWeek" content="Tuesday" />
+					  <meta itemprop="dayOfWeek" content="Wednesday" />
+					  <meta itemprop="dayOfWeek" content="Thursday" />
+					  <meta itemprop="dayOfWeek" content="Friday" />
+					  <meta itemprop="opens" content="10:00" />
+					  <meta itemprop="closes" content="19:00" />
+					</div>
+				  </div>
 		<div class="picture right">
-			<img src="./assets/images/camera.webp" alt="alt="Image de Caméra">
+			<img src="./assets/images/camera.webp" alt="Image de Caméra">
 		</div>
 	</div>
 </div>
