@@ -19,8 +19,33 @@
 		  content="Découvrez notre galerie de photos professionnelles, incluant des concerts, portraits, et événements d'entreprise."
 		/>
 		<meta name="twitter:image" content="./assets/images/nina.webp" />
+		          <!-- Micro-données pour améliorer le référencement local -->
+				  <script type="application/ld+json">
+					{
+					  "@context": "https://schema.org",
+					  "@type": "ProfessionalService",
+					  "name": "Carducci Nina",
+					  "image": ""
+					  "address": {
+						"@type": "PostalAddress",
+						"streetAddress": "68 avenue Alsace-Lorraine",
+						"addressLocality": "Bordeaux",
+						"postalCode": "33200",
+						"addressCountry": "FR"
+					  },
+					  "telephone": "+33 5 56 67 78 89",
+					  "priceRange": "50€ - 400€",
+					  "openingHours": "Monday-Friday 10:00-19:00",
+					  "url": "https://nina-carducci.github.io/",
+					  "sameAs": [
+						"https://www.instagram.com/ninacarducci.photo/?hl=fr",
+					  ],
+					  "description": "Photographe professionnelle spécialisée dans divers domaines de la photographie.",
+					  "professionalService": "Photographie"
+					}
+					</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,21 +56,22 @@
       name="description"
       content="Découvrez notre galerie de photos professionnelles, incluant des concerts, portraits, et événements d'entreprise."
     />
-	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
+
 </head>
 <body>
 <div class="top-header">
-	<h3 class="name">Nina Carducci</h3>
+	<h1 class="name">Nina Carducci</h1>
 	<div class="nav">   
 		<ul>
 			<li><a href="#about">À propos</a></li>
 			<li><a href="#gallery">Galerie</a></li>
 			<li><a href="#services">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="icone instagram"></a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="logo instagram"></a></li>
 		</ul>
 	</div>
 </div>
@@ -83,12 +109,13 @@
 		<img src="./assets/images/nina.webp" alt="Photographie de l'auteur Nina Carducci">
 	</div>
 	<div id="about-me">
-		<h3 class="about-me__title">A propos de moi</h3>
-		<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
+		<h2 class="about-me__title">A propos de moi</h2>
+		<h3 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h3>
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
 </div>
+<main>
 <div id="gallery">
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
@@ -107,14 +134,14 @@
 	<div class="quote">
 		<figure>
 			<blockquote>
-				<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h1>
+				<h2 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h2>
 			</blockquote>
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
 	</div>
 </div>
 <div id="services">
-	<h3 class="title">Mes services</h3>
+	<h2 class="title">Mes services</h2>
 	<div class="container">
 		<div class="service">
 			<div class="service__description">
@@ -152,54 +179,31 @@
 <div class="quote">
 	<figure>
 		<blockquote>
-			<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
+			<h2 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h2>
 		</blockquote>
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
 </div>
-<div id="contact">
+</main>
+<footer id="contact">
 	<div class="container">
 		<div class="form-container">
 			<h3>Une question ? Une demande de devis ?</h3>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form action="" method="post">
-				<label>Nom</label>
+				<label for="nom">Nom</label>
 				<input type="text" name="nom" id="nom">
-				<label>Email</label>
+				<label for="email">Email</label>
 				<input type="email" name="email" id="email">
-				<label>Message</label>
+				<label for="message">Message</label>
 				<textarea name="message" id="message" cols="30" rows="10"></textarea>
 				<input type="submit" value="Envoyer"/>
 			</form>
-		</div>
-		          <!-- Micro-données pour améliorer le référencement local -->
-				  <div class="contact-info" itemscope itemtype="http://schema.org/LocalBusiness">
-					<meta itemprop="name" content="Nina Carducci" />
-					<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-					  <meta itemprop="streetAddress" content="68 avenue Alsace-Lorraine" />
-					  <meta itemprop="addressLocality" content="Bordeaux" />
-					  <meta itemprop="postalCode" content="33200" />
-					  <meta itemprop="addressCountry" content="FR" />
-					</div>
-					<meta itemprop="telephone" content="05 56 67 78 89" />
-					<div
-					  itemprop="openingHoursSpecification"
-					  itemscope
-					  itemtype="http://schema.org/OpeningHoursSpecification"
-					>
-					  <meta itemprop="dayOfWeek" content="Monday" />
-					  <meta itemprop="dayOfWeek" content="Tuesday" />
-					  <meta itemprop="dayOfWeek" content="Wednesday" />
-					  <meta itemprop="dayOfWeek" content="Thursday" />
-					  <meta itemprop="dayOfWeek" content="Friday" />
-					  <meta itemprop="opens" content="10:00" />
-					  <meta itemprop="closes" content="19:00" />
-					</div>
-				  </div>
+		</div>			
 		<div class="picture right">
 			<img src="./assets/images/camera.webp" alt="Image de Caméra">
 		</div>
 	</div>
-</div>
+</footer>
 </body>
 </html>
