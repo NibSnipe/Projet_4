@@ -86,6 +86,9 @@ body {
 .gallery .nav {
   justify-content: center;
 }
+.gallery li{
+  cursor: pointer;
+}
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
